@@ -58,3 +58,19 @@ list6 = ['q', 'r', 's', 't', 'u']
 ##list to series
 s1 = Series(list4)
 s2 = Series(list6)
+
+## create dataframe from lists OR series
+list7 = range(60, 65)
+zip(list4, list6)
+zip1 = zip(list4, list6, list7)
+df1 = DataFrame(zip1)
+df2 = DataFrame(zip1, columns = ['two', 'apple', ':)'])
+df2 = DataFrame(zip1, columns = [2, '2', ':)']) 
+df2[2] # reference column with key (int) 2
+df2['2'] # reference column with key (str) '2'
+df2[3:4] # slice out row 3
+df2[['2',':)']][3:4] # to get column '2' and ';)' then get row 3
+##make dataframe using dict notation
+df4 = DataFrame({ ':(' : list4, 7: list6})
+dict1 = { ':(' : list4, 9: list6}
+

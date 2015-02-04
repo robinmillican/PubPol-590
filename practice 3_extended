@@ -1,0 +1,10 @@
+from pandas import Series,DataFrame
+import pandas as pd
+import numpy as np
+
+main_dir = "/Users/robin/Desktop/Big Data/Data"
+csv_file = "/sample_data_clean.csv"
+git_dir = "/Users/robin/Desktop/Big Data/GitHub/PubPol-590"
+
+df = pd.read_csv(main_dir + csv_file)
+df
